@@ -36,58 +36,66 @@ body {
   display: block;
   position: absolute;
   bottom: 0;
+    width:100%;
 }
 
 
-.parallax__layer__0 img {
-  display: block;
-  position: absolute;
-  bottom: -400px;
-}
+
 
 .parallax__layer__6 img {
   display: block;
   position: absolute;
-  bottom: -300px;
+  bottom: 0px;
+
 }
 
 
 .parallax__layer__5 img {
   display: block;
   position: absolute;
-  bottom: -250px;
+  bottom: 50px;
+
 }
 
 
 .parallax__layer__4 img {
   display: block;
   position: absolute;
-  bottom: -100px;
+  bottom: 150px;
 }
 
 .parallax__layer__3 img {
   display: block;
   position: absolute;
-  bottom: 0px;
+  bottom: 200px;
 }
 
 .parallax__layer__2 img {
   display: block;
   position: absolute;
-  bottom: 100px;
+  bottom: 180px;
 }
 
 .parallax__layer__1 img {
   display: block;
   position: absolute;
+
   bottom: 50px;
 }
 
 
+.parallax__layer__0 img {
+  display: block;
+  position: absolute;
+  width:100%;
+  bottom: 50px;
+
+}
+
 .parallax__cover {
   background: #000000;
   position: absolute;
-  top: 90%;
+  top: 100%;
   left: 0;
   right: 0;
   height: 2000px;
@@ -96,38 +104,38 @@ body {
 }
 
 .parallax__layer__0 {
-  -webkit-transform: translateZ(-300px) scale(2);
-          transform: translateZ(-300px) scale(2);
+  -webkit-transform: translateZ(-300px) scale(4);
+          transform: translateZ(-300px) scale(4);
 }
 
 .parallax__layer__1 {
-  -webkit-transform: translateZ(-250px) scale(1.75);
-          transform: translateZ(-250px) scale(1.75);
+  -webkit-transform: translateZ(-250px) scale(3.5);
+          transform: translateZ(-250px) scale(3.5);
 }
 
 .parallax__layer__2 {
-  -webkit-transform: translateZ(-200px) scale(1.5);
-          transform: translateZ(-200px) scale(1.5);
+  -webkit-transform: translateZ(-200px) scale(3);
+          transform: translateZ(-200px) scale(3);
 }
 
 .parallax__layer__3 {
-  -webkit-transform: translateZ(-150px) scale(1.25);
-          transform: translateZ(-150px) scale(1.25);
+  -webkit-transform: translateZ(-150px) scale(2.5);
+          transform: translateZ(-150px) scale(2.5);
 }
 
 .parallax__layer__4 {
-  -webkit-transform: translateZ(-100px) scale(1);
-          transform: translateZ(-100px) scale(1);
+  -webkit-transform: translateZ(-100px) scale(2);
+          transform: translateZ(-100px) scale(2);
 }
 
 .parallax__layer__5 {
-  -webkit-transform: translateZ(-50px) scale(0.75);
-          transform: translateZ(-50px) scale(0.75);
+  -webkit-transform: translateZ(-50px) scale(1.5);
+          transform: translateZ(-50px) scale(1.5);
 }
 
 .parallax__layer__6 {
-  -webkit-transform: translateZ(0px) scale(0.5);
-          transform: translateZ(0px) scale(0.5);
+  -webkit-transform: translateZ(0px) scale(1);
+          transform: translateZ(0px) scale(1);
 
 }
 
@@ -172,16 +180,17 @@ body {
     </div>
   <div class="parallax__cover"></div>
 
+<!--
   <audio id="mp3" autoplay="autoplay" controls="controls">
      <source src="music.mp3" />
   </audio>
-
+-->
 
 </div>
 
 
 
-<!--
+
 <script>
 
 function testmargin(){
@@ -194,9 +203,10 @@ myElement.style.marginLeft = "-" + windowwidth + "px";
 
 testmargin();
 
+window.onresize = function(){testmargin();}
 
 </script>
--->
+
 
 </body>
 </html>
