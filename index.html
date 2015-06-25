@@ -42,28 +42,33 @@ body {
 .parallax__layer__0 img {
   display: block;
   position: absolute;
+  bottom: -400px;
 }
 
 .parallax__layer__6 img {
   display: block;
   position: absolute;
+  bottom: -300px;
 }
 
 
 .parallax__layer__5 img {
   display: block;
   position: absolute;
+  bottom: -250px;
 }
 
 
 .parallax__layer__4 img {
   display: block;
   position: absolute;
+  bottom: -100px;
 }
 
 .parallax__layer__3 img {
   display: block;
   position: absolute;
+  bottom: 0px;
 }
 
 .parallax__layer__2 img {
@@ -75,14 +80,123 @@ body {
 .parallax__layer__1 img {
   display: block;
   position: absolute;
+  bottom: 50px;
 }
 
 
 .parallax__cover {
   background: #000000;
   position: absolute;
+  top: 90%;
   left: 0;
   right: 0;
   height: 2000px;
   z-index: 2;
 
+}
+
+.parallax__layer__0 {
+  -webkit-transform: translateZ(-300px) scale(2);
+          transform: translateZ(-300px) scale(2);
+}
+
+.parallax__layer__1 {
+  -webkit-transform: translateZ(-250px) scale(1.75);
+          transform: translateZ(-250px) scale(1.75);
+}
+
+.parallax__layer__2 {
+  -webkit-transform: translateZ(-200px) scale(1.5);
+          transform: translateZ(-200px) scale(1.5);
+}
+
+.parallax__layer__3 {
+  -webkit-transform: translateZ(-150px) scale(1.25);
+          transform: translateZ(-150px) scale(1.25);
+}
+
+.parallax__layer__4 {
+  -webkit-transform: translateZ(-100px) scale(1);
+          transform: translateZ(-100px) scale(1);
+}
+
+.parallax__layer__5 {
+  -webkit-transform: translateZ(-50px) scale(0.75);
+          transform: translateZ(-50px) scale(0.75);
+}
+
+.parallax__layer__6 {
+  -webkit-transform: translateZ(0px) scale(0.5);
+          transform: translateZ(0px) scale(0.5);
+
+}
+
+
+#mp3{
+
+  position:absolute;
+  top:1000px;
+  left:50%;
+/*  margin-left:-100px;  */
+  z-index:100;
+
+}
+  </style>
+
+</head>
+<body>
+
+
+
+<div class="parallax">
+  <div class="parallax__layer parallax__layer__0">
+    <img src="moon.png" />
+  </div>
+  <div class="parallax__layer parallax__layer__1">
+    <img src="overlay.png" />
+  </div>
+  <div class="parallax__layer parallax__layer__2">
+    <img src="mountains3.png" />
+  </div>
+  <div class="parallax__layer parallax__layer__3">
+    <img src="mountains2.png"  />
+  </div>
+  <div class="parallax__layer parallax__layer__4">
+    <img src="mountains1.png"  />
+  </div>
+  <div class="parallax__layer parallax__layer__5">
+    <img src="city.png"  />
+  </div>
+  <div class="parallax__layer parallax__layer__6">
+    <img src="grass.png" />
+    </div>
+  <div class="parallax__cover"></div>
+
+  <audio id="mp3" autoplay="autoplay" controls="controls">
+     <source src="music.mp3" />
+  </audio>
+
+
+</div>
+
+
+
+<!--
+<script>
+
+function testmargin(){
+var windowwidth = window.innerWidth / 2;
+
+var myElement = document.querySelector(".parallax");
+myElement.style.marginLeft = "-" + windowwidth + "px";
+
+}
+
+testmargin();
+
+
+</script>
+-->
+
+</body>
+</html>
